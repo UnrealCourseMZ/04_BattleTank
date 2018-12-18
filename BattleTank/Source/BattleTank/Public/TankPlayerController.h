@@ -26,4 +26,6 @@ private:
 	// the crosshair intersects the world
 	void AimTowardsCrosshair();
 	
+	// Return an OUT parameter, true if hit landscpae
+	bool GetSightRayHitLocation(FVector &OutHitLocation) const;
 };
