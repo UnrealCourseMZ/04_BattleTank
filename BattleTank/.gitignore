@@ -76,9 +76,7 @@ Plugins/*/Intermediate/*
 # Cache files for the editor to use
 DerivedDataCache/*
 
-#Starter Content
-Content/StarterContent/*
-
 test.png
 
 Content/BattleGround.umap
+Content/UI/BT17-Firing-M1A1-tank-in-Djibouti.uasset
