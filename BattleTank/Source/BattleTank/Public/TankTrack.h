@@ -24,16 +24,9 @@ public:
 	float TrackMaxDrivingForce = 40000000; // Assume 40 tonne tank and 1g acceleration
 
 private:
-	UTankTrack();
+	UTankTrack();;
 
-	virtual void BeginPlay() override;
+	TArray<class ASprungWheel*> GetWheels() const;
 
-	UFUNCTION()
-	void OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit);
-
-	void ApplySidewaysForce();
-
-	void DriveTrack();
-
-	float CurrentThrottle = 0;
+	void DriveTrack(float CurrentThrottle);
 };
